@@ -11,7 +11,7 @@ public class frequency {
         int[] nums = new int[n];
         int[] freq = new int[n];
 
-        // Initialize freq array with -1
+        // Initialize frequency array with -1
         for(int i = 0; i < n; i++) {
             freq[i] = -1;
         }
@@ -23,12 +23,12 @@ public class frequency {
         }
 
         // frequency logic
-        for(int i = 0; i < n; i++) {
-            if(freq[i] == -1) {
+        for(int i = 0; i < n; i++){
+            if(freq[i] == -1){
                 int count = 1;
 
-                for(int j = i + 1; j < n; j++) {
-                    if(nums[i] == nums[j]) {
+                for(int j = i + 1; j < n; j++){
+                    if(nums[i] == nums[j]){
                         count++;
                         freq[j] = 0;   // mark duplicate
                     }

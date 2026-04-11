@@ -16,7 +16,7 @@ public class countNumber {
 		for(int i=0; i<size; i++) {
 			if(arr[i]<key) count++;
 		}
-		System.out.print("Numbers Are Smaller Than the Current Number"+count);
+		System.out.print("Numbers Are Smaller Than the Current Number: "+count);
 	}
 
 }

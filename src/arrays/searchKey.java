@@ -24,7 +24,7 @@ public static void main(String[] args) {
 			break;
 		}
 	}
-	if(found==1) System.out.print("found at position "+(i+1));
+	if(found==1) System.out.print("Found at position "+(i+1));
 	else System.out.print("not found");
 }	
 }

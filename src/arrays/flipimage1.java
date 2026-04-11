@@ -17,6 +17,7 @@ public class flipimage1 {
 		}
 		
 		for(int i=0;i<row;i++) {
+			
 			int left =0;
 			int right = col-1;
 		// SWAP AND REVERT
