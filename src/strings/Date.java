@@ -19,5 +19,6 @@ public class Date {
 
 		// Print result
 		System.out.println("Today's date: " + formattedDate);
+		
 	}
 }

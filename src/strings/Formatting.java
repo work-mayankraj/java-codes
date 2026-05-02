@@ -15,7 +15,5 @@ public class Formatting {
         // Pass values inside format()
         System.out.println(String.format("Formatted integer: %,d", l));
         System.out.println(String.format("Formatted double: %.2f", db));
-
-        input.close();
     }
 }
