@@ -3,38 +3,33 @@ import java.util.*;
 public class CountFrequency {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Enter a string: ");
-		String str = sc.nextLine();
-
-		int size = str.length();
-
-		System.out.println("Character Frequencies:");
-
-		for (int i = 0; i < size; i++) {
-			char current = str.charAt(i);
-			int count = 0;
-
-			// Check if already counted
-			boolean alreadyCounted = false;
-			for (int k = 0; k < i; k++) {
-				if (str.charAt(k) == current) {
-					alreadyCounted = true;
-					break;
-				}
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.println("Enter a string:");
+	String str = sc.nextLine();
+	
+	for(int i=0; i<str.length();i++) {
+		int sum = 0;
+		char current = str.charAt(i);
+		
+		// check if already exist 
+		boolean count = false;
+		for(int k=0; k<i; k++) {
+			if(current == str.charAt(k)){
+				count = true;
+				break;
 			}
-			if (alreadyCounted) {
-				continue;
-			}
-			// Count frequency
-			for (int j = 0; j < size; j++) {
-				if (str.charAt(j) == current) {
-					count++;
-				}
-			}
-
-			System.out.println(current + ": " + count);
+		}
+		if(count) {
+			continue;
+		}
+		 // count frequency
+		for(int j=0; j<str.length(); j++) {
+			if(current == str.charAt(j)) {
+				sum++;
+			}	
+		}
+		System.out.println(current +": "+ sum);
 		}
 	}
 }
